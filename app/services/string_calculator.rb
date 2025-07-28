@@ -2,6 +2,6 @@
 class StringCalculator
 
   def add(numbers)
-    #code goes here
+    return 0 if numbers.blank?
   end
 end
