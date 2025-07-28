@@ -12,5 +12,13 @@ RSpec.describe StringCalculator do
     it 'returns the number for a single input number' do
       expect(calculator.add('1')).to eq(1)
     end
+
+    it 'returns the sum of two comma-seprated number' do
+      expect(calculator.add('1,2')).to eq(3)
+    end
+
+    it 'returns the sum of multiple comma-seprated number' do
+      expect(calculator.add('1, 2, 3')).to eq(6)
+    end
   end
 end
